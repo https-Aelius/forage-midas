@@ -19,6 +19,12 @@ public class UserPopulator {
             String[] userData = userLine.split(", ");
             UserRecord user = new UserRecord(userData[0], Float.parseFloat(userData[1]));
             databaseConduit.save(user);
+            //now adding code for the task
+            //String username = userData[0];
+            //if ("waldorf".equalsIgnoreCase(username)) {
+                //UserRecord user = new UserRecord(username, Float.parseFloat(userData[1]));
+                //databaseConduit.save(user);
+            //}
         }
     }
 }
