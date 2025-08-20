@@ -1,11 +1,19 @@
-package com.jpmc.midascore;
+package com.jpmc.midascore.entity;
 
-import com.jpmc.midascore.entity.UserRecord;
-import jakarta.persistence.Column;
+import jakarta.persistence.*;
+
+
+import jakarta.persistence.Entity;
+
+
 import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
 
+import jakarta.persistence.Id;
+
+
+
+
+@Entity
 public class TransactionRecord {
     @Id
     @GeneratedValue()
@@ -29,6 +37,8 @@ public class TransactionRecord {
         this.amount = amount;
         this.incentive = incentive;
     }
+
+
 
     public Long getId() {
         return id;

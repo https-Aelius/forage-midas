@@ -3,17 +3,14 @@ package com.jpmc.midascore.foundation;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Balance {
+public class Incentive {
     private float amount;
 
-    public Balance() {
+    public Incentive() {
     }
 
-    public Balance(float amount) {
+    public Incentive(float amount) {
         this.amount = amount;
-    }
-
-    public Balance(Long id, float balance) {
     }
 
     public float getAmount() {
@@ -26,6 +23,6 @@ public class Balance {
 
     @Override
     public String toString() {
-        return "Balance {amount=" + amount + "}";
+        return "Incentive {amount=" + amount + "}";
     }
 }

@@ -1,5 +1,5 @@
 package com.jpmc.midascore;
-
+//remember to add entities to the userRepo and TransactionRecordRepo
 import com.jpmc.midascore.foundation.Balance;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
